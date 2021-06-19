@@ -1,0 +1,51 @@
+h3 {
+  font-family: KaiTi;
+}
+.van-dialog__message--has-title {
+  color: #e27b01;
+}
+.van-card__price {
+  color: #e27b01;
+}
+.van-submit-bar__bar {
+  padding: 0 16px 0 0;
+}
+.van-tag--primary.van-tag--plain {
+  margin-top: 5px;
+  color: #af8d60;
+}
+.van-grid-item__text {
+  color: #333333;
+}
+.van-search__content {
+  border: 2px solid #e27b01;
+  box-shadow: 2px 2px #af8d60;
+}
+.van-sidebar-item--select::before {
+  background-color: #e27b01;
+}
+.van-button--primary {
+  background-color: #e57b00;
+  border: 1px solid #e57b00;
+}
+.van-field__label {
+  color: #333333;
+}
+.van-tag--primary {
+  background-color: #af8d60;
+  padding: 2px 4px;
+  margin-top: 6px;
+}
+.van-checkbox__icon--checked .van-icon {
+  background-color: #af8d60;
+  border: #af8d60 1px solid;
+}
+.van-card__title {
+  font-weight: 700;
+}
+.van-submit-bar__price {
+  color: #e27b01;
+}
+.van-submit-bar__button--danger {
+  background-color: #e57b00;
+}

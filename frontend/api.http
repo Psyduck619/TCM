@@ -1,0 +1,1 @@
+GET http://47.111.10.102:8085/goods/findById?id=2
