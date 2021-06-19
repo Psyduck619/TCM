@@ -1,0 +1,54 @@
+@hostname = localhost
+@port = 8000
+@host = {{hostname}}:{{port}}
+@contentType = application/json
+@createdAt = {{$datetime iso8601}}
+
+### add a user
+POST http://{{host}}/user HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+  "account": "123",
+  "password": "123",
+  "nickname": "yuan",
+  "tel": "123"
+}
+
+### find a user by id
+GET http://{{host}}/user/3 HTTP/1.1
+
+### match user's id and password
+POST http://{{host}}/user/login HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+  "account": "123",
+  "password": "124"
+}
+
+### match user's id and password
+PUT http://{{host}}/user/2 HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+  "account": "121",
+  "password": "123",
+  "nickname": "yuan",
+  "tel": "123"
+}
+
+
+
+
+### POST 测试
+POST http://{{host}}/posts HTTP/1.1
+Content-Type: {{contentType}}
+
+{
+  "user": "yuan",
+  "password": "123"
+}
+
+### GET 测试
+GET http://{{host}}/user HTTP/1.1
